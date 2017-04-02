@@ -1,0 +1,64 @@
+<template name="home">
+  <br>
+  <br>
+  <div class = "container-fluid">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h1>Welcome <strong>{{crew_id}}</strong></h1>
+        <p>
+          Status:{{#if crew_status}}
+          <a style="color:green"><strong>Available</strong></a>
+          {{else}}
+          <a style="color:red"><strong>On The Job</strong></a>
+          {{/if}}
+        </p>
+      </div>
+
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <div class="table-responsive">
+          <div class="table">
+            {{#with report}}
+            <a  class="list-group-item">
+              <a class="text-center" >
+                Report ID: &emsp;<strong> {{report_id}}</strong>
+              </a>
+            </a>
+            <a  class="list-group-item">
+              Date: &emsp;&emsp;<strong> {{date}}</strong>
+            </a>
+            <a class="list-group-item">
+              Time: &emsp;&emsp;<strong> {{time}}</strong>
+            </a>
+            <a  class="list-group-item">
+              Description: &emsp;<strong> {{description}}</strong>
+            </a>
+            <div  class="list-group-item">
+              <button type="button" class="btn btn-outline btn-link">
+                <!-- <a href="https://www.google.com/maps?daddr={{lat}},{{lng}}">Get Directions&emsp;<p class="fa fa-location-arrow"> </p></a> -->
+                <!-- <a href="https://www.google.com/maps/dir/current+location/{{lat}},{{lng}}">Get Directions&emsp;<p class="fa fa-location-arrow"> </p></a> -->
+                <a href="https://www.google.com/maps/dir/1.2978075,103.8494636/{{lat}},{{lng}}">Get Directions&emsp;<p class="fa fa-location-arrow"> </p></a>
+              </button>
+            </div>
+            {{/with}}
+            <a  class="list-group-item">
+
+              <button type="button" class="btn btn-outline btn-primary">
+                <div class="jobstatusbutton">{{accept_complete_job}}</div>
+              </button>
+            </a>
+            <a  class="list-group-item">
+              <button type="button" class="btn btn-outline btn-danger">
+                <div class="logout"> Logout </div>
+              </button>
+            </a>
+            <!-- /.panel-body -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</template>

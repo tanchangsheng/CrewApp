@@ -1,0 +1,82 @@
+
+**** North Crew ****
+db.crews.insert({
+  "crew_id" : "north1",
+  "password" : "eirocks",
+  "status" : "a",
+  "region" : "n",
+  "lat" : 1.4382,
+  "lng" : 103.7890
+})
+
+db.crews.insert({
+  "crew_id" : "north2",
+  "password" : "eirocks",
+  "status" : "a",
+  "region" : "n",
+  "lat" : 1.4382,
+  "lng" : 103.7890
+})
+
+**** South Crew ****
+
+db.crews.insert({
+  "crew_id" : "south1",
+  "password" : "eirocks",
+  "status" : "a",
+  "region" : "s",
+  "lat" : 1.296568,
+  "lng" : 103.852119
+})
+
+
+
+**** East Crew ****
+
+db.crews.insert({
+  "crew_id" : "east1",
+  "password" : "eirocks",
+  "status" : "a",
+  "region" : "e",
+  "lat" : 1.3236,
+  "lng" : 103.9273
+})
+
+**** West Crew ****
+
+db.crews.insert({
+  "crew_id" : "west1",
+  "password" : "eirocks",
+  "status" : "a",
+  "region" : "w",
+  "lat" : 1.3329,
+  "lng" : 1103.7436
+})
+
+SMU - South 1
+db.reports.insert({
+  "report_id" : "DLswAaaLctqT7rtjk",
+  "createdAt" : "21/03/2017, 19:47:27",
+  "image_id" : "CtSx4FeB6riJoQGD5",
+  "lat" : 1.2973784,
+  "lng" : 103.84952190000001,
+  "date" : "21/03/2017",
+  "time" : "18:42:53",
+  "description" : "wfefew",
+  "status" : "na",
+  "report_assignedRegion" : "s"
+})
+
+woodlands checkpoint - north
+db.reports.insert({
+  "report_id" : "44rkvoFS5dhjsLToK",
+  "createdAt" : "21/03/2017, 19:47:27",
+  "image_id" : "qdqqfeqfwefeweg",
+  "lat" : 1.4438,
+  "lng" : 103.7696,
+  "date" : "21/03/2017",
+  "time" : "18:42:53",
+  "description" : "wfefew",
+  "status" : "na",
+  "report_assignedRegion" : "s"
+})
